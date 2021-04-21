@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Emotional Solid</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html{background-color: #fbfbfb; scroll-behavior: smooth; font-family: 'Noto Sans KR', sans-serif;}
+		h1{font-family: 'Rafelya Carrotin Regular'; color: lightgrey;
+			text-align: left; font-size: 3em; line-height: 1.4; font-weight: 400;}
+		p{word-break: keep-all; font-weight: 200; color: black;}
+		body, h1, h2, h3, h4, h5, h6, img, p, pre{margin: 0;}
+		header{background-color: none;
+				width: 100%; 
+				border-bottom-width: 2px; 
+				border-bottom-style: solid; 
+				border-bottom-color: #ceacc5;
+				z-index: 100;}
+		footer{height: 200px; background-color: #1f3266;}
+		footer p{text-align: center; font-size: 1.1em; padding-top: 60px; line-height: 1.7;}
+		.section{text-align: center; margin-left: auto; margin-right: auto; clear: both; z-index: 1;}
+
+		.section-h100{width: 100%; height: 100vh;}
+		#main-video{display: block;
+				top: 50% left: 50%;
+				min-width: 100% min-height: 100%
+				transform: translate(-50%, -50%);
+				width: 100%; height: 100%;
+				outline: 0px;
+				border: 0px;}
+
+		.scroll-container
+		{position: absolute; 
+		top: 82%; 
+		max-width: 100px; 
+		left: 50%; 
+		transform: translate(-50%, 0);
+		text-align: center;}
+		.scroll-mouse{display: block; margin-bottom: 10px; animation: mouse 0.6s linear 0s infinite alternate;}
+		.scroll-down{display: block; animation: down 0.6s linear 0s infinite alternate;}
+		@keyframes mouse {0%{margin-bottom: 10px;} 100% {margin-bottom: 20px;}}
+		@keyframes down {0%{opacity: 0} 100% {opacity: 1}}
+		.main{position: absolute; text-align: center;}
+		.fixed{position: fixed; top: 0px;}
+		.header-container{padding-left: 50px; padding-right: 50px; max-width: 1920px;}
+		.solid-container{margin:auto; 
+						position: relative;
+						margin-top: 88px; 
+						display: block;
+						text-align: center; 
+						height: calc(100vh - 88px);
+						overflow: hidden;
+						z-index: 3;}
+		.scroll-bound{height: 1200vh;}
+		.overview{height: 100vh;
+				width: 100%;
+				position: sticky;
+				top: 0;}		
+		.overview video{height: 100%; 
+							width: 100%; 
+							object-fit: cover;}
+		.logo{padding-top: 15px; padding-bottom: 15px; text-align: left; opacity: 0;
+				transition: opacity 0.6s;}
+		.circle-size{display: block; position: absolute; width: 100%; height: 520px; border-radius: 260px;}
+		.c1{background: radial-gradient(circle, rgba(255,153,213,0.4) 0%, rgba(255,255,255,0) 60%);}
+		.c2{background: radial-gradient(circle, rgba(80,255,175,0.4) 0%, rgba(255,255,255,0) 60%);}
+		.c3{background: radial-gradient(circle, rgba(80,167,255,0.4) 0%, rgba(255,255,255,0) 60%);}
+		.c4{background: radial-gradient(circle, rgba(246,97,90,0.4) 0%, rgba(255,255,255,0) 60%);}
+		.c5{background: radial-gradient(circle, rgba(115,103,245,0.4) 0%, rgba(255,255,255,0) 60%);}
+
+		.solids{display: block;
+				position: absolute; width: 95%;
+				top: 49%; left: 50%; 
+				transform: translate(-50%, -50%);
+				filter: drop-shadow(25px 30px 15px rgba(0,0,0,.05)); opacity: 0; transition: opacity 0.5s;}
+		.solid-size{position: absolute; width: 28vw; height: 40vh;}
+		.position1{top: 3vh; left: 5vw;}
+		.position2{top: 48vh; left: 20vw;}
+		.position3{top: 8vh; left: 36vw;}
+		.position4{top: 48vh; left: 52vw;}
+		.position5{top: 3vh; left: 67vw;}}
+
+	</style> 
+</head>
+<body>
+	<section id="sec-one" class="section section-h100">
+			<video autoplay muted loop id="main-video">
+				<source src="main.mp4" type="video/mp4">
+			</video>
+			<div class="scroll-container">
+			<div class="scroll-mouse">
+			<img src="scroll_mouse.png">
+			</div>
+			<div class="scroll-down">
+			<img src="scroll_down.png">				
+			</div>
+		</div>
+	</section>
+
+
+	<div>
+	<header id="bar" class="main">
+		<div class="header-container">
+			<div class="logo" id="logo">
+			<img src="logo.png">
+			</div>
+	</div>
+	</header>
+    </div>
+
+
+
+	<div id="sec-two" class="scroll-bound">
+		<div class="overview" id="videoContainer">
+			<video src="overview.mp4" id="overviewVideo">
+				</video>
+		</div>
+	</div>
+
+
+
+	<div  id="sec-three" class="solid-container">
+
+		 <div class="solid-size position1">
+		 <div class="circle-size c1">	
+		 </div>
+		 <a href="sub1.html">
+		 <img src="happy3.png" 
+		 onmouseover="this.src='happy4.png'" 
+		 onmouseout="this.src='happy3.png'"
+		 class="solids"
+		 id="solid1">
+		 </a>
+		 </div>
+
+		 <div class="solid-size position2">
+		 <div class="circle-size c2">	
+		 </div>
+		 <a href="sub2.html">
+		 <img src="calm1.png" 
+		 onmouseover="this.src='calm2.png'" 
+		 onmouseout="this.src='calm1.png'"
+		 class="solids"
+		 id="solid2">
+		</a>
+		</div>
+
+		<div class="solid-size position3">
+		<div class="circle-size c3">	
+		 </div>
+		<a href="sub3.html">
+		 <img src="gloomy1.png" 
+		 onmouseover="this.src='gloomy2.png'" 
+		 onmouseout="this.src='gloomy1.png'"
+		 class="solids"
+		 id="solid3">
+		</a>
+		</div>
+
+		<div class="solid-size position4">
+		<div class="circle-size c4">	
+		 </div>
+		<a href="sub4.html">
+		 <img src="angry1.png" 
+		 onmouseover="this.src='angry2.png'" 
+		 onmouseout="this.src='angry1.png'"
+		 class="solids"
+		 id="solid4">
+		</a>
+		</div>
+
+		<div class="solid-size position5">
+		<div class="circle-size c5">	
+		 </div>
+		<a href="sub5.html">
+		 <img src="fear1.png" 
+		 onmouseover="this.src='fear2.png'" 
+		 onmouseout="this.src='fear1.png'"
+		 class="solids"
+		 id="solid5">
+		</a>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	const registerVideo = (sec, video) => {
+	sec = document.querySelector(sec);
+	video = document.querySelector(video);
+	const scrollVideo = ()=>{
+		if(video.duration) {
+			const distanceFromTop = window.scrollY + sec.getBoundingClientRect().top;
+			const rawPercentScrolled = (window.scrollY - distanceFromTop) / (sec.scrollHeight - window.innerHeight);
+			const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
+			video.currentTime = video.duration * percentScrolled;
+		}
+		requestAnimationFrame(scrollVideo);
+	}
+	requestAnimationFrame(scrollVideo);
+}
+
+registerVideo("#sec-two", "#sec-two video")
+
+
+	var header, headerPosition, logo, solid, solidPosition;
+	header = document.getElementById('bar');
+	headerPosition = header.offsetTop;
+	solidPosition = document.getElementById('sec-three').offsetTop;
+	logo = document.getElementById('logo');	
+	
+	function headerFixed(){
+		if (window.pageYOffset >= headerPosition){
+			header.classList.add("fixed");
+		} else {
+			header.classList.remove("fixed");
+		}
+	}
+
+	function logoFadeIn(){
+		if (window.pageYOffset >= headerPosition-500){
+			logo.style.opacity = "1";
+		} else {
+			logo.style.opacity = "0";
+		}
+	}
+
+	function solidFadeIn(){
+		if(window.pageYOffset >= solidPosition-500){
+		document.getElementById('solid1').style.opacity = "1";
+		document.getElementById('solid2').style.opacity = "1";
+		document.getElementById('solid3').style.opacity = "1";
+		document.getElementById('solid4').style.opacity = "1";
+		document.getElementById('solid5').style.opacity = "1";
+		} else {
+		document.getElementById('solid1').style.opacity = "0";
+		document.getElementById('solid2').style.opacity = "0";
+		document.getElementById('solid3').style.opacity = "0";
+		document.getElementById('solid4').style.opacity = "0";
+		document.getElementById('solid5').style.opacity = "0";
+		}
+	}
+	document.addEventListener('scroll',headerFixed);
+	document.addEventListener('scroll',logoFadeIn);
+	document.addEventListener('scroll',solidFadeIn);
+</script>
+
+
+
+</html>

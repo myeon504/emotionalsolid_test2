@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Emotional Solid</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html{background-color: #fbfbfb; scroll-behavior: smooth; font-family: 'Noto Sans KR', sans-serif;}
+		body, h1, h2, h3, h4, h5, h6, img, p, pre{margin: 0;}
+		h1{font-size: 3em; line-height: 1.4; font-weight: 500;}
+		h2{font-size: 2em; line-height: 1.4; font-weight: 400; margin-bottom: 20px;}
+		h3{font-size: 1.5em; margin-bottom: 12px;}
+		p{font-size: 1.5em; line-height: 1.8; word-break: keep-all; font-weight: 300; color: black;}
+		header{ background-color: #fbfbfb;
+			    width: 100%; 
+				border-bottom-width: 2px; 
+				border-bottom-style: solid; 
+				border-bottom-color: #ceacc5;
+				z-index: 50}
+		footer{height: 200px; background-color: #1f3266;}
+		ul {margin: 0; padding: 0;}
+		ul li{list-style: none; float: left;
+            vertical-align: middle;
+        	padding-left: 30px; padding-right: 30px;}
+		li p{font-size : 1.4em; line-height: 50px;}
+		li a{text-decoration: none;}
+		.section{text-align: center;margin-left: auto; margin-right: auto; clear: both;}
+		.section-h100{width: 100%; height: 100vh;}
+		.section-mh100{min-height: 100vh; width: 100%}
+		.main{text-align: center;}
+		.fixed{position: fixed; top: 0px;}
+		.header-container{padding-left: 50px; padding-right: 50px;}
+		.logo{padding-top: 15px; padding-bottom: 15px; text-align: left;}
+		.navigation{display: block; 
+					position : fixed; 
+					right : 40px; 
+					text-align: center; 
+					padding-top: 15px; 
+					padding-bottom: 15px;
+					z-index: 51;}
+		.menu-selected{font-weight: 700; color: #ceacc5;}
+		.menu-unselected{font-weight: 400; color: grey;}
+		.container{display: flex; z-index: 1;}
+		.half-L{position: relative; width: calc(50vw - 1px); height: 100vh;
+				border-right-width: 2px; border-right-style: solid; border-right-color: #ceacc5}
+		.half-R{position: relative; width: calc(50vw - 1px); height: 100vh; overflow-y: scroll;}
+		.img-container{display: block; position: relative; top: 88px;
+						width: 100%; height: calc(100vh - 88px); overflow: hidden;}
+		.solid-image{
+					position: absolute;
+					width: 100%;
+					top: 50%; left: 50%; 
+					transform: translate(-50%, -50%);}
+
+
+		.contents-container{display: block; position: relative; top: 88px; overflow: hidden;
+						width: 100%; margin: auto;}
+		.contents-title{height: 300px;
+						border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #ceacc5;
+						text-align : center;}
+		.title-container{display: block; padding-top: 84.5px; padding-bottom: 84.5px}
+		.contents-section1{position: relative; height: 240px; margin-left: auto; margin-right: auto;
+						border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #ceacc5;}
+		.features-container{display: flex; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+		.feature{width: 100px; padding-left: 60px; padding-right: 60px; text-align: center;}
+		.contents-section2{position: relative; height: 1000px; margin-left: auto; margin-right: auto;}
+		.details-container{padding-top: 8vh;}
+		.detail{padding-left: 5vw; padding-right: 5vw; margin-bottom: 50px;}
+		.gloomy{color: #50a7ff}
+	</style> 
+</head>
+<body>	
+	<header id="bar" class="main fixed">
+		<div class="header-container">
+			<div class="logo">
+			<a href="index.html">
+			<img src="logo.png">
+			</a>
+			</div>
+	</div>
+	</header>
+	<nav class="navigation">
+		<ul>
+			<li>
+			<a href="sub1.html">
+			<p class="menu-unselected">행복체</p>
+			</a>
+			</li>
+			<li>
+			<a href="sub2.html">
+			<p class="menu-unselected">침착체</p>
+			</a>
+			</li>
+			<li>
+			<p class="menu-selected"><u>우울체</u></p>
+			</li>
+			<li>
+			<a href="sub4.html">
+			<p class="menu-unselected">분노체</p>
+			</a>
+			</li>
+			<li>
+			<a href="sub5.html">
+			<p class="menu-unselected">공포체</p>
+			</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="half-L">
+		<div class="img-container">
+			<img src="gloomy.gif" class="solid-image">
+		</div>
+		</div>
+		<div class="half-R">
+		<div class="contents-container">
+			<div class="contents-title">
+				<div class="title-container">
+				<h2 class="gloomy">마음껏 울어버리고 싶을 때</h2>
+				<h1 class="gloomy">우울체<h1>
+					</div>
+			</div>
+			<div class="contents-section1">
+				<div class="features-container">
+				<div class="feature">
+					<img src="box.png">
+					<h3>향</h3>
+					<p>내용</p>
+				</div>
+				<div class="feature">
+				<img src="box.png">
+				<h3>사용 시간</h3>
+				<p>내용</p>
+				</div>
+				<div class="feature">
+				<img src="box.png">
+				<h3>지속 시간</h3>
+				<p>내용</p>
+				</div>
+			</div>
+		</div>
+		<div class="contents-section2">
+			<div class="details-container">
+			<div class="detail">
+			<p>설명
+			<br>
+			<br>
+			<br>
+			</p>
+			</div>
+			<div class="detail">
+			<p>추천
+			<br>·
+			<br>·
+			<br>·
+			</p>
+			</div>
+			<div class="detail">
+			<p>사용 방법
+			<br>1)
+			<br>2)
+			<br>3)
+			</p>
+			</div>
+			<div class="detail">
+			<p>주의사항
+			<br>·
+			<br>·
+			<br>·
+			</p>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
